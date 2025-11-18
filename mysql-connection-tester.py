@@ -10,7 +10,7 @@ from mysql.connector import Error, errorcode
 def get_connection(
     host="localhost",
     user="root",
-    password="root",
+    password="[your password]",
     database="expense_manager",
 ):
     """Create and return a MySQL database connection."""
@@ -454,3 +454,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = ConnectionTesterApp(root)
     root.mainloop()
+
